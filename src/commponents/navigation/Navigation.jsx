@@ -31,7 +31,7 @@ export default function Navigation() {
                 >
                     <li className='nav'><Link to="/"><b>Home</b></Link></li>
                     <li className='nav'><Link to="/Market"><b>Market</b></Link></li>
-                    <li className='nav'><a href="!#"><b>Acedemy</b></a></li>
+                    <li className='nav'><Link to="/Academy"><b>Acedemy</b></Link></li>
                     <li className='nav'><Link to="/Tools"><b>Tools</b></Link></li>
                     <li className='nav'><Link to="/News"><b>News</b></Link></li>
                 </ul>

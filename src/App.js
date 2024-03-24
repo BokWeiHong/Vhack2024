@@ -12,6 +12,7 @@ import Tools from "./Tools.jsx";
 import Invest from "./Invest.jsx";
 import Budget from "./Budget.jsx";
 import Retire from "./Retire.jsx";
+import Academy from "./Academy.jsx";
 
 function App() {
   return (
@@ -29,6 +30,10 @@ function App() {
           <Route
             path="/news"
             element={<News />}
+          />
+          <Route
+            path="/Academy"
+            element={<Academy />}
           />
           <Route
             path="/tools"
