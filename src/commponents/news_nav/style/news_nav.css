@@ -1,0 +1,15 @@
+div.news_nav{
+    background-color: #262626;
+}
+
+div.news_nav button{
+    background-color: #262626;
+    border: #262626;
+    color: aliceblue;
+    font-size: 14px;
+}
+@media (max-width: 640px){
+    div.news_nav{
+        display: none;
+    }
+}

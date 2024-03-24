@@ -1,0 +1,237 @@
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.budget-header{
+    animation: floatUp 0.8s ease forwards;
+}
+
+.budget-rule {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 2rem;
+    opacity: 0;
+    transform: translateY(100px);
+    animation: floatUp 0.8s ease forwards;
+}
+
+@keyframes floatUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.pie-chart-section {
+    flex: 1;
+    max-width: 40%;
+    margin-bottom: 120px;
+}
+
+.rule-text {
+    flex: 1;
+    margin-bottom: 80px;
+    max-width: 60%;
+    padding: 40px 40px;
+    padding-left: 50px;
+    background: linear-gradient(135deg, #000000 0%, #2e0d4d 50%, #6926a8 100%);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    opacity: 0.5;
+    transform: translateY(0);
+    transition: transform 0.5s ease;
+}
+
+.rule-text.transformed {
+    transform: translateY(-100px);
+}
+
+.rule-text:hover {
+    transform: scale(1.02);
+}
+
+.rule-title {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: rgb(255, 255, 255);
+}
+
+.rule-description {
+    font-size: 1rem;
+    line-height: 2;
+    color:#c390f5;
+}
+
+.budget-button {
+    text-align: left;
+    padding-top: 2rem;
+    width: 200px;
+    color: #ffffff;
+}
+
+.budget-button:hover {
+    color: #c2c2c2;
+    transform: scale(1.05);
+}
+
+.budget-button:active {
+    transform: scale(0.95);
+}
+
+.budget-input {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: #f4f4f4;
+    height:fit-content;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+
+.budget-input.expanded {
+    height: auto;
+}
+
+.category-cards {
+    display: flex;
+    justify-content: center; 
+    margin-top: 30px;
+}
+
+.category-card {
+    flex: 1;
+    max-width: 300px;
+    padding: 20px;
+    margin: 0 10px;
+    border: 1px solid #ccc; 
+    border-radius: 10px;
+    background-color: #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.category-card img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.category-card h3 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.forms-container {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.category-forms {
+    display: none;
+    margin: 50px auto; 
+    max-width: 80%; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-forms.expanded {
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.expense-form h3 {
+    margin-bottom: 20px;
+}
+.expense-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.expense-form input,
+.expense-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.expense-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.expense-form button:hover {
+    background-color: #45a049;
+}
+
+.expense-tracker {
+    max-width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background:linear-gradient(135deg, #f4e4c3 0%, #e8ecc7 50%, rgb(224, 231, 204) 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.expense-tracker:hover {
+    transform: scale(1.02);
+}
+
+.expense-list {
+    margin-top: 20px;
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.expense-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.expense-name {
+    flex: 1;
+}
+
+.expense-date,
+.expense-info {
+    color: #777;
+}
+
+.expense-amount {
+    flex: 1;
+    text-align: right;
+}

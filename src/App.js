@@ -1,24 +1,57 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
+
+import Home from "./Home.jsx";
+import Market from "./Market.jsx";
+import Indices from "./Indices.jsx";
+import News from "./News.jsx";
+import Tools from "./Tools.jsx";
+import Invest from "./Invest.jsx";
+import Budget from "./Budget.jsx";
+import Retire from "./Retire.jsx";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+          <Route
+            exact
+            path="/"
+            element={<Home />}
+          />
+          <Route
+            path="/market"
+            element={<Market />}
+          />
+          <Route
+            path="/news"
+            element={<News />}
+          />
+          <Route
+            path="/tools"
+            element={<Tools />}
+          />
+          <Route
+            path="/tools/invest"
+            element={<Invest />}
+          />
+          <Route
+            path="/tools/budget"
+            element={<Budget />}
+          />
+          <Route
+            path="/tools/retire"
+            element={<Retire />}
+          />
+          <Route
+            path="/market/indices"
+            element={<Indices />}
+          />
+      </Routes>
+    </Router>
   );
 }
 

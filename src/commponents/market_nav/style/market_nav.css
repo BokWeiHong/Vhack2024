@@ -1,0 +1,15 @@
+div.market_nav{
+    background-color: #262626;
+}
+
+div.market_nav button{
+    background-color: #262626;
+    border: #262626;
+    color: aliceblue;
+    font-size: 14px;
+}
+@media (max-width: 640px){
+    div.market_nav{
+        display: none;
+    }
+}

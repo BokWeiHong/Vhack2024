@@ -1,0 +1,27 @@
+div.financial-market{
+    background: url("../../../images/yeloow-heaer.jpg");
+}
+div.financial-market p{
+    color: ghostwhite;
+}
+div.grid{
+    background-color: white;
+}
+p.yellow-text{
+    color:darkgoldenrod;
+}
+img{
+    pointer-events: none;
+}
+th, td{
+    font-size: small;
+}
+td.green-text{
+    color:green
+}
+td.red-text{
+    color:red
+}
+p.text{
+    color:darkgoldenrod;
+}
