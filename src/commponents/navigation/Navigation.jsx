@@ -21,7 +21,7 @@ export default function Navigation() {
     <div className='nav_container w-full h-16 flex justify-center'>
         <nav className='wrapper h-16 flex justify-between items-center relative'>
             <div className='logo'>
-                <a><b>Bee4Invest</b>.com</a>
+                <a href='/'><b>Bee4Invest</b>.com</a>
             </div>
 
             <div className='links'>
